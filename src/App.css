@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
+    color: #333;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header img {
+    position: relative;
+    top: 4px;
+    padding: 0 8px;
+}
+.search-input input{
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    /* box-sizing: border-box; */
+    font-size: 22px;
+    padding: 8px 8px;
+    width: 97%;
+    
+}
+.search-input{
+    margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.emoji-list{
+    list-style: none;
+    font-size: 20px;
+} 
+.list{
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+    height: 20px;
+    position: relative;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.emoji-class{
+   /* margin-top: 10px; */
+    border: 1px solid #ccc ;
+}
+.searchEmoji{
+    margin-top: 10px;
+    border: 1px solid #bbb;
+}
+.github-fork-ribbon{
+    width: 12.1em;
+    height: 12.1em;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    pointer-events: none;
+    font-size: 13px;
+    text-decoration: none;
+    text-indent: -999999px;
+    
+}
+.github-fork-ribbon:before {
+    background-color: #333;
+}
+.github-fork-ribbon:before {
+    position: absolute;
+    display: block;
+    width: 15.38em;
+    height: 1.44em;
+    top: 3.23em;
+    right: -3.23em;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: "";
+    padding: .38em 0;
+    background-image: -webkit-linear-gradient(top,transparent,rgba(0,0,0,.15));
+    background-image: -o-linear-gradient(top,transparent,rgba(0,0,0,.15));
+    box-shadow: 0 0.15em 0.23em 0 rgba(0,0,0,.5);
+    pointer-events: auto;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.github-fork-ribbon::after {
+    background-color: #333;
 }
