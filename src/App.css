@@ -52,39 +52,21 @@
     margin-top: 10px;
     border-top: 1px solid #bbb;
 }
-.github-fork-ribbon{
-    width: 12.1em;
-    height: 12.1em;
+a{
+    width: 16.1em;
+    height: 2em;
     position: absolute;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    pointer-events: none;
-    font-size: 13px;
-    text-indent: -999999px;
-}
-.github-fork-ribbon:before {
-    background-color: rgb(73, 52, 52);
-}
-.github-fork-ribbon:before {
-    position: absolute;
-    display: block;
-    width: 15.38em;
-    height: 1.44em;
-    right: -3.23em;
-    transform: rotate(45deg);
-    content: "";
-    padding: .38em 0;
-    pointer-events: auto;
+    top: 28px;
+    right: -10px;
+    font-size: 11px;
+    border-radius:50px ;
+    /* text-indent: -999999px; */
+    background-color:rgb(19, 26, 18);
+    transform: rotate(35deg);
+    text-align: center;
+    text-decoration: none;
     
 }
-
-.github-fork-ribbon:after {
-    content: attr(title);
-    color: #fff;
-    
-}
-
 .copys {
     float: right;
     position: relative;
