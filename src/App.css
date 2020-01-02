@@ -18,35 +18,39 @@
 .search-input input{
     border-radius: 8px;
     border: 1px solid #bbb;
-    /* box-sizing: border-box; */
-    font-size: 22px;
+    font-size: 11px;
     padding: 8px 8px;
     width: 97%;
+    outline: none;
     
 }
 .search-input{
-    margin-left: 10px;
+    margin-left: 8px;
 }
-
 .emoji-list{
     list-style: none;
     font-size: 20px;
+    color: rgb(58, 55, 55);
+    cursor: pointer;
 } 
+.emoji-title{
+    list-style: none;
+    font-size: 12px;
+    color: rgb(58, 55, 55);
+}
 .list{
     border-bottom: 1px solid #ccc;
     padding: 4px;
-    height: 20px;
+    height: 25px;
     position: relative;
-    margin-top: 5px;
-    cursor: pointer;
+    
 }
 .emoji-class{
-   /* margin-top: 10px; */
     border: 1px solid #ccc ;
 }
 .searchEmoji{
     margin-top: 10px;
-    border: 1px solid #bbb;
+    border-top: 1px solid #bbb;
 }
 .github-fork-ribbon{
     width: 12.1em;
@@ -55,35 +59,44 @@
     overflow: hidden;
     top: 0;
     right: 0;
-    z-index: 9999;
     pointer-events: none;
     font-size: 13px;
-    text-decoration: none;
     text-indent: -999999px;
-    
 }
 .github-fork-ribbon:before {
-    background-color: #333;
+    background-color: rgb(73, 52, 52);
 }
 .github-fork-ribbon:before {
     position: absolute;
     display: block;
     width: 15.38em;
     height: 1.44em;
-    top: 3.23em;
     right: -3.23em;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     content: "";
     padding: .38em 0;
-    background-image: -webkit-linear-gradient(top,transparent,rgba(0,0,0,.15));
-    background-image: -o-linear-gradient(top,transparent,rgba(0,0,0,.15));
-    box-shadow: 0 0.15em 0.23em 0 rgba(0,0,0,.5);
     pointer-events: auto;
     
 }
 
-.github-fork-ribbon::after {
-    background-color: #333;
+.github-fork-ribbon:after {
+    content: attr(title);
+    color: #fff;
+    
 }
+
+.copys {
+    float: right;
+    position: relative;
+    top:5px;
+    right: 20px;
+    color: #ccc;
+    font-size: 15px;
+    display: none;
+}
+.emoji-list:hover .copys  {
+    display: block;
+  }
+.list:hover {
+    background-color: #eee;
+  } 
